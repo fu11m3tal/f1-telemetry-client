@@ -11,18 +11,18 @@ const board = new five.Board({
 });
 
 board.on('ready', () => {
-    const g1 = new five.Led('P1-11');
-    const g2 = new five.Led('P1-13');
-    const g3 = new five.Led('P1-15');
+    const g1 = new five.Led('P1-7');
+    const g2 = new five.Led('P1-11');
+    const g3 = new five.Led('P1-13');
   
 
-    const r1 = new five.Led('P1-29');
-    const r2 = new five.Led('P1-31');
-    const r3 = new five.Led('P1-33');
+    const r1 = new five.Led('P1-15');
+    const r2 = new five.Led('P1-29');
+    const r3 = new five.Led('P1-31');
 
-    const b1 = new five.Led('P1-35');
-    const b2 = new five.Led('P1-37');
-    const b3 = new five.Led('P1-7');
+    const b1 = new five.Led('P1-33');
+    const b2 = new five.Led('P1-35');
+    const b3 = new five.Led('P1-37');
 
     client.on(PACKETS.carTelemetry, ( data ) => {
       const {m_carTelemetryData} = data;
